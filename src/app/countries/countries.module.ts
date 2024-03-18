@@ -22,10 +22,7 @@ import { CountryPageComponent } from './pages/country-page/country-page.componen
     CountriesRoutingModule
   ],
   exports: [
-    ByCapitalPageComponent,
-    ByCountryPageComponent,
-    ByRegionPageComponent,
-    CountryPageComponent
+
   ]
 })
 export class CountriesModule { }
