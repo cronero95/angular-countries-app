@@ -34,4 +34,11 @@ export class CountriesService {
       )
   }
 
+  searchCountryByCode(code: string): Observable<Country[]> {
+    return this.httpClient.get<Country[]>(`${this.apiUrl}/alpha/${code}`)
+      .pipe(
+        catchError(() => of([]))
+      )
+  }
+
 }
