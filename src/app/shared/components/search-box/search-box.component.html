@@ -4,6 +4,7 @@
   type="text"
   [placeholder]="placeholder"
   class="form-control"
+  [value]="initialValue"
   (keyup)="onKeyPress(txtSearchInput.value)"
   (keyup.enter)="emitValue(txtSearchInput.value)"
   #txtSearchInput
